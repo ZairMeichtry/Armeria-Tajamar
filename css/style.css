@@ -280,7 +280,160 @@ main {
     border: 2px solid rgba(0, 0, 0, 0.7);
     border-radius: 20px;
 }
+/* ------------------- Nosotros -------------------- */
+.imagenes {
+    display: none;
+}
+.nosotros {
+    display: flex;
+    gap: 20px;
+    flex-flow: column nowrap;
+}
+.Andres {
+    padding: 20px;
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 20px;
+}
+.f1 {
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 10px;
+align-items: center;
+}
+.f1 img {
+    width: 50%;
+}
+.f1 h3 {
+    background-color: #F4FCD9cd;
+    padding: 5px;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+.text {
+    color: white;
+    text-align: justify;
+}
+.Roberto {
+    padding: 20px;
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 20px;
+}
+.f2 {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    gap: 10px;
+}
+.f2 img {
+    width: 50%;
+}
+.f2 h3 {
+    background-color: #f4fcd9cd;
+    padding: 5px;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+.Armeria {
+    border-radius: 20px;
+    padding: 20px;
+    margin: 10px 0;
+    border: 1px solid black;
+    background-color: rgba(128, 128, 128, 0.561);
+    color: white;
+    display: flex;
+    align-items: center;
+    flex-flow: column nowrap;
+}
+.Armeria img {
+    width: 20%;
+}
 
+/* ----------------- Contacto --------------------- */
+.sec {
+    display: grid;
+    grid-template-columns: repeat(10, 10%);
+    grid-template-rows: repeat(20, auto);
+}
+.contact {
+    grid-column: 2/10;
+    grid-row: 1/10;
+}
+.consulta {
+    display: flex;
+    flex-flow: column nowrap;
+    padding: 20px;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+.consulta img {
+    width: 20%;
+}
+.imag {
+    display: none;
+}
+
+.ubic {
+    color: white;
+    grid-column: 2/10;
+    grid-row: 10/20;
+    display: flex;
+    align-items: center;
+    flex-flow: column nowrap;
+}
+.form form {
+    display: flex;
+    flex-flow: column;
+    margin-top: 20px;
+    gap: 10px;
+width: 100%;
+}
+.map iframe {
+    width: 300px;
+    height: 300px;
+}
+.atte {
+    background-color: #D0C9C0;
+    border-radius: 20px;
+    border: 1px solid black;
+    padding: 20px;
+    margin-bottom: 10px;
+    color: black;
+}
+.redes {
+    margin: 20px;
+    display: flex;
+    gap: 10px;
+    flex-flow: column nowrap;
+
+}
+.redes img {
+    width: 20%;
+}
+.insta {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    gap: 10px;
+}
+.insta a{
+    text-decoration: none;
+    color: white;
+    font-family: 'Goldman', cursive;
+}
+.face a{
+    text-decoration: none;
+    color: white;
+    font-family: 'Goldman', cursive;
+}
+.face {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    gap: 10px;
+}
 
 
 
@@ -361,7 +514,6 @@ main {
     grid-template-columns: repeat(6, 16.6%);
     grid-template-rows: 30% 20% 15% 15% ;
 }
-/* 90px 40px 60px 20px */
 
 .logo {
     grid-column: 2/6;
