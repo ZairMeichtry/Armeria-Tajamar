@@ -435,10 +435,21 @@ width: 100%;
     gap: 10px;
 }
 
+/* ----------------- Tienda ---------------------- */
 
-
-
-
+.tienda {
+    background-image: url(../assets/img/tienda/foto-fondo.jpg);
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.navbar {
+    background-color: #EFEAD8;
+}
+.my-color {
+    background-color:#485742 ;
+}
 /* ------------- footer ----------------------- */
 
 .correo {
@@ -454,6 +465,7 @@ width: 100%;
     justify-content: space-evenly;
     text-transform: uppercase;
     font-size: 7px;
+    margin: 0;
 }
 
 .correo li {
