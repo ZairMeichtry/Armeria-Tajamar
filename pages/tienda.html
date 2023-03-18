@@ -25,7 +25,7 @@
         </div>
         <div>
             <nav>
-                <ul class="NavBar">
+                <ul class="NavBarr">
                     <li class="Active">
                         <a href="./tienda.html">tienda</a>
                     </li>
@@ -47,27 +47,22 @@
     </header>
     <main class="tienda">
         <section>
-        </section>
-        <nav class="navbar">
-            <div class="container-fluid">
-                <a class="navbar-brand">
-                    <img src="../assets/img/tienda/logo-footer.png" alt="imagen logo">
-                </a>
-                <form class="d-flex" role="search">
-                    <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
-                    <button class="btn btn-outline-success" type="submit">
-                        <img src="../assets/img/tienda/Search.png" alt="boton buscador">
-                    </button>
-                </form>
-            </div>
-            <div>
-                <a href="../pages/tienda.html">ofertas</a>
-                <a href="../pages/tienda.html">popular</a>
-                <a href="../pages/tienda.html">historial</a>
-                <a href="../pages/servicios.html">ayuda</a>
-            </div>
-        </nav>
-        <section>
+            <nav class="navbar d-flex row-gap-2 justify-content-center">
+                <div class="container-fluid">
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">
+                            <img src="../assets/img/tienda/Search.png" alt="boton buscador">
+                        </button>
+                    </form>
+                </div>
+                <div class="links">
+                    <a href="../pages/tienda.html">ofertas</a>
+                    <a href="../pages/tienda.html">popular</a>
+                    <a href="../pages/tienda.html">historial</a>
+                    <a href="../pages/servicios.html">ayuda</a>
+                </div>
+            </nav>
         </section>
         <!-- <section>
             <div>
@@ -90,14 +85,75 @@
                         <li>
                             <a href="../pages/tienda.html">categoria</a>
                         </li>
-
                     </ul>
                 </div>
                 <div>
                     <img src="../assets/img/tienda/Code.png" alt="logo code">
                 </div>
             </div>
-        </section>-->
+        </section> -->
+        <section class="filtro">
+            <nav class="navbar navbar-expand-lg">
+                <div class="container-fluid filtro">
+                    <h5>Filtros</h5>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item dropdown">
+                                <button type="button" class="btn  dropdown-toggle" data-bs-toggle="dropdown"
+                                    data-bs-display="static" aria-expanded="false">
+                                    precio
+                                </button>
+                                <ul class="dropdown-menu dropdown-menu-end dropdown-menu-lg-start">
+                                    <li><button class="dropdown-item" type="button">menor-mayor</button></li>
+                                    <li><button class="dropdown-item" type="button">mayor-menor</button></li>
+                                    <li><button class="dropdown-item" type="button">                                            <form class="d-flex" role="search">
+                                        <input class="form-control me-2" type="search" placeholder="1-10000000"
+                                            aria-label="Search">
+                                    </form></button></li>
+                                </ul>
+                                </button>
+                            </li>
+                            <li class="nav-item dropdown column">
+                                <button type="button" class="btn  dropdown-toggle" data-bs-toggle="dropdown"
+                                    data-bs-display="static" aria-expanded="false">
+                                    marcas
+                                </button>
+                                <ul class="dropdown-menu dropdown-menu-end dropdown-menu-lg-start">
+                                    <li><button class="dropdown-item" type="button">Action</button></li>
+                                    <li><button class="dropdown-item" type="button">Another action</button></li>
+                                    <li><button class="dropdown-item" type="button">
+                                            <form class="d-flex" role="search">
+                                                <input class="form-control me-2" type="search" placeholder="Buscar"
+                                                    aria-label="Search">
+                                            </form>
+                                        </button></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown column">
+                                <button type="button" class="btn  dropdown-toggle" data-bs-toggle="dropdown"
+                                    data-bs-display="static" aria-expanded="false">
+                                    Categoria
+                                </button>
+                                <ul class="dropdown-menu dropdown-menu-end dropdown-menu-lg-start">
+                                    <li><button class="dropdown-item" type="button">Action</button></li>
+                                    <li><button class="dropdown-item" type="button">Another action</button></li>
+                                    <li><button class="dropdown-item" type="button">Something else here</button></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <form class="d-flex" role="search">
+                            <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+                            <button class="btn btn-outline-success" type="submit">buscar</button>
+                        </form>
+                    </div>
+                </div>
+            </nav>
+        </section>
         <section class="container-fluid">
             <div class="d-flex justify-content-around row row-gap-5 column-gap 3 p-5">
                 <div class="card col-sm-12" style="width: 18rem;">

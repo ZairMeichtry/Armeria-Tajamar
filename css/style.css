@@ -6,72 +6,10 @@
 }
 
 /* --------------- Header ------------ */
-header {
-    background-color: #EFEAD8;
-}
 
-.titulo {
-    background-color: #EFEAD8;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    font-size: 10px;
-    text-align: end;
-    gap: 10px;
-    font-family: 'Adamina', serif;
-    padding-bottom: 10px;
-}
-
-.titulo img {
-    margin-top: 5px;
-    width: 70px;
-    height: 70px;
-}
-
-.title h2 {
-    font-size: 1em;
-}
-
-/* ---------------- NavBar ----------------- */
-
-.Active {
-    background-color: #464E2E;
-}
-
-.NavBar {
-    margin: 0;
-    padding-bottom: 10px;
-    display: flex;
-    flex-flow: column wrap;
-    list-style-type: none;
-    align-items: center;
-    gap: 10px;
-    padding-top: 10px;
-    background-color: #D0C9C0;
-}
-
-.NavBar li {
-    display: flex;
-    width: 100%;
-}
-
-.NavBar a {
-    text-align: center;
-    width: 100%;
-    font-size: 10px;
-    padding: 10px;
-    font-weight: bold;
-    color: rgb(0, 0, 0);
-    text-decoration: none;
-    text-transform: uppercase;
-}
 
 /* -------------- Inicio ---------------------- */
-main {
-    background-color: #485742;
-    font-family: 'Hanuman', serif;
-}
+
 
 .main {
     display: grid;
@@ -447,13 +385,90 @@ width: 100%;
 .navbar {
     background-color: #EFEAD8;
 }
-.my-color {
-    background-color:#485742 ;
+.links a {
+    list-style-type: none;
+    text-decoration: none;
+    color:  black;
 }
-/* ------------- footer ----------------------- */
+.filtro section{
+    background-color: #EFEAD8;
+}
+.filtro h5 {
+    margin: 0;
+    font-size: 1em;
+}
 
+/* ------------- header ----------------------- */
+header {
+    background-color: #EFEAD8;
+}
 
+.titulo {
+    background-color: #EFEAD8;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 10px;
+    text-align: end;
+    gap: 10px;
+    font-family: 'Adamina', serif;
+    padding-bottom: 10px;
+}
 
+.titulo img {
+    margin-top: 5px;
+    width: 70px;
+    height: 70px;
+}
+
+.title h2 {
+    font-size: 10px;
+    font-family: 'Adamina', serif;
+}
+
+/* ---------------- NavBar ----------------- */
+
+.Active {
+    background-color: #464E2E;
+}
+
+.NavBarr {
+    margin: 0;
+    padding-bottom: 10px;
+    display: flex;
+    flex-flow: column wrap;
+    list-style-type: none;
+    align-items: center;
+    gap: 10px;
+    padding-left: 0;
+    padding-top: 10px;
+    background-color: #D0C9C0;
+}
+.NavBarr ul {
+    padding: 0;
+}
+.NavBarr li {
+    display: flex;
+    width: 100%;
+    font-family: 'Hanuman', serif;
+}
+
+.NavBarr a {
+    text-align: center;
+    width: 100%;
+    font-size: 10px;
+    padding: 10px;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    text-transform: uppercase;
+}
+/* ------------ main ------------- */
+main {
+    background-color: #485742;
+    font-family: 'Hanuman', serif;
+}
 
 /* ------------------ --- footer ----------------------- */
 
@@ -466,6 +481,7 @@ width: 100%;
     display: flex;
     flex-flow: row nowrap;
     width: 100%;
+    padding: 0;
     align-items: center;
     justify-content: space-evenly;
     text-transform: uppercase;
