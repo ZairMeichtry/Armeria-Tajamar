@@ -23,9 +23,9 @@
                 <h2>De Roberto Ciaffoni</h2>
             </div>
         </div>
-        <div>
+        <div class="NavBarr">
             <nav>
-                <ul class="NavBarr">
+                <ul>
                     <li class="Active">
                         <a href="./tienda.html">tienda</a>
                     </li>
@@ -48,9 +48,9 @@
     <main class="tienda">
         <section>
             <nav class="navbar d-flex row-gap-2 justify-content-center">
-                <div class="container-fluid">
-                    <form class="d-flex" role="search">
-                        <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+                <div class="container-fluid justify-content-center  ">
+                    <form class="d-flex col-sm-12 col-md-6 col-lg-8" role="search">
+                        <input class="form-control me-2 " type="search" placeholder="Buscar" aria-label="Search">
                         <button class="btn btn-outline-success" type="submit">
                             <img src="../assets/img/tienda/Search.png" alt="boton buscador">
                         </button>
@@ -64,38 +64,10 @@
                 </div>
             </nav>
         </section>
-        <!-- <section>
-            <div>
-                <input type="text" placeholder="Buscar...">
-                <a href="../pages/tienda.html"><img src="../assets/img/tienda/buscafiltro.png" alt="logo buscador"></a>
-                <div>
-                    <h5>ordenar por</h5><a href="../pages/tienda.html"><img src="../assets/img/tienda/Swap vert.png"
-                            alt="logo ordenar"></a>
-                    <h6>filtros</h6><a href="../pages/tienda.html"><img src="../assets/img/tienda/Reorder.png"
-                            alt="logo filtro"></a>
-                </div>
-                <div>
-                    <ul>
-                        <li>
-                            <a href="../pages/tienda.html">actividad</a>
-                        </li>
-                        <li>
-                            <a href="../pages/tienda.html">marca</a>
-                        </li>
-                        <li>
-                            <a href="../pages/tienda.html">categoria</a>
-                        </li>
-                    </ul>
-                </div>
-                <div>
-                    <img src="../assets/img/tienda/Code.png" alt="logo code">
-                </div>
-            </div>
-        </section> -->
         <section class="filtro">
             <nav class="navbar navbar-expand-lg">
                 <div class="container-fluid filtro">
-                    <h5>Filtros</h5>
+                    <h5>Filtros: </h5>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                         data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
                         aria-label="Toggle navigation">
@@ -111,10 +83,12 @@
                                 <ul class="dropdown-menu dropdown-menu-end dropdown-menu-lg-start">
                                     <li><button class="dropdown-item" type="button">menor-mayor</button></li>
                                     <li><button class="dropdown-item" type="button">mayor-menor</button></li>
-                                    <li><button class="dropdown-item" type="button">                                            <form class="d-flex" role="search">
-                                        <input class="form-control me-2" type="search" placeholder="1-10000000"
-                                            aria-label="Search">
-                                    </form></button></li>
+                                    <li><button class="dropdown-item bg-transparent" type="button">
+                                            <form class="d-flex" role="search">
+                                                <input class="form-control me-2" type="search" placeholder="1-10000000"
+                                                    aria-label="Search">
+                                            </form>
+                                        </button></li>
                                 </ul>
                                 </button>
                             </li>
@@ -124,11 +98,11 @@
                                     marcas
                                 </button>
                                 <ul class="dropdown-menu dropdown-menu-end dropdown-menu-lg-start">
-                                    <li><button class="dropdown-item" type="button">Action</button></li>
-                                    <li><button class="dropdown-item" type="button">Another action</button></li>
+                                    <li><button class="dropdown-item " type="button">Savage</button></li>
+                                    <li><button class="dropdown-item" type="button">Ruger</button></li>
                                     <li><button class="dropdown-item" type="button">
                                             <form class="d-flex" role="search">
-                                                <input class="form-control me-2" type="search" placeholder="Buscar"
+                                                <input class="form-control me-2" type="search" placeholder="Marca"
                                                     aria-label="Search">
                                             </form>
                                         </button></li>
@@ -140,15 +114,17 @@
                                     Categoria
                                 </button>
                                 <ul class="dropdown-menu dropdown-menu-end dropdown-menu-lg-start">
-                                    <li><button class="dropdown-item" type="button">Action</button></li>
-                                    <li><button class="dropdown-item" type="button">Another action</button></li>
-                                    <li><button class="dropdown-item" type="button">Something else here</button></li>
+                                    <li><button class="dropdown-item" type="button">Rifle</button></li>
+                                    <li><button class="dropdown-item" type="button">Revolver</button></li>
+                                    <li><button class="dropdown-item" type="button">Carabina</button></li>
+                                    <li><button class="dropdown-item" type="button">Escopeta</button></li>
                                 </ul>
                             </li>
                         </ul>
                         <form class="d-flex" role="search">
-                            <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
-                            <button class="btn btn-outline-success" type="submit">buscar</button>
+                            <input class="form-control me-2" type="search" placeholder="Filtrar..." aria-label="Search">
+                            <button class="btn btn-outline-success" type="submit"><img
+                                    src="../assets/img/tienda/Search.png" alt="boton buscador"></button>
                         </form>
                     </div>
                 </div>
@@ -156,7 +132,7 @@
         </section>
         <section class="container-fluid">
             <div class="d-flex justify-content-around row row-gap-5 column-gap 3 p-5">
-                <div class="card col-sm-12" style="width: 18rem;">
+                <div class="card col-sm-12 col-md-5 col-lg-5 col-xl-5 col-xxl-2 g-3">
                     <img src="../assets/img/tienda/img1.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="card-title">Precision RimFire</h5>
@@ -166,7 +142,7 @@
                         <a href="./tienda.html" class="btn btn-secondary">Comprar</a>
                     </div>
                 </div>
-                <div class="card col-sm-12" style="width: 18rem;">
+                <div class="card col-sm-12 col-md-5 col-lg-5 col-xl-5 col-xxl-2 g-3">
                     <img src="../assets/img/tienda/img2.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="card-title">Precision RimFire</h5>
@@ -176,8 +152,8 @@
                         <a href="./tienda.html" class="btn btn-secondary">Comprar</a>
                     </div>
                 </div>
-                <div class="card col-sm-12" style="width: 18rem;">
-                    <img src="../assets/img/tienda/img3.jpg" class="card-img-top" alt="...">
+                <div class="card col-sm-12 col-md-5 col-lg-5 col-xl-5 col-xxl-2 g-3">
+                    <img src="../assets/img/tienda/img3.jpg" class="card-img-top img-thumbnail" alt="...">
                     <div class="card-body">
                         <h5 class="card-title">Precision RimFire</h5>
                         <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellendus,
@@ -186,7 +162,7 @@
                         <a href="./tienda.html" class="btn btn-secondary">Comprar</a>
                     </div>
                 </div>
-                <div class="card col-sm-12" style="width: 18rem;">
+                <div class="card col-sm-12 col-md-5 col-lg-5 col-xl-5 col-xxl-2 g-3">
                     <img src="../assets/img/tienda/img4.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="card-title">Precision RimFire</h5>
@@ -196,8 +172,8 @@
                         <a href="./tienda.html" class="btn btn-secondary">Comprar</a>
                     </div>
                 </div>
-                <div class="card col-sm-12" style="width: 18rem;">
-                    <img src="../assets/img/tienda/img1.jpg" class="card-img-top" alt="...">
+                <div class="card col-sm-12 col-md-5 col-lg-5 col-xl-5 col-xxl-2 g-3">
+                    <img src="../assets/img/tienda/img5.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="card-title">Precision RimFire</h5>
                         <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellendus,
