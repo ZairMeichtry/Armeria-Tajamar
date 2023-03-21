@@ -441,10 +441,8 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
-    font-size: 10px;
     text-align: end;
     gap: 10px;
-    font-family: 'Adamina', serif;
     padding-bottom: 10px;
 }
 
@@ -453,7 +451,10 @@ header {
     width: 70px;
     height: 70px;
 }
-
+.title h1 {
+    font-family: 'Adamina', serif;
+    font-size: 30px;
+}
 .title h2 {
     font-size: 10px;
     font-family: 'Adamina', serif;
@@ -487,7 +488,7 @@ header {
     text-decoration: none;
     text-transform: uppercase;
     font-size: 15px;
-    font-weight: bold;
+    font-weight:bold;
     font-family: 'Hanuman', serif;
     color: #000000;
 }
@@ -516,7 +517,9 @@ main {
     font-size: 0.5rem;
     margin: 0;
 }
-
+.correo p {
+    font-weight: bold;
+}
 .correo li {
     margin: 0;
     padding: 15px;
@@ -657,22 +660,27 @@ main {
 
 /* ------------------------------------------- RESPONSIVE ---------------------------------------- */
 
-/* ------------- MOBILE to TABLET ----------------------- */
+/* ------------- TABLET ----------------------- */
 
 @media (min-width:760px) {
 
     /* ---------------- header ------------------ */
     .titulo {
-        font-size: 20px;
+        display: flex;
+        flex-flow: row;
+        gap: 20px;
+        justify-content: space-around;
+        width: 70%;
     }
-
     .titulo img {
         width: 90px;
         height: 90px;
     }
-
+    .title h1 {
+        font-size: 35px;
+    }
     .title h2 {
-        font-size: 15px;
+        font-size: 12px;
     }
 
     /* ------------------- navbar ----------------------- */
@@ -684,7 +692,7 @@ main {
     }
 
     .NavBarr li {
-        display: inline-block;
+        display: block;
         list-style-type: none;
         text-align: center;
         width: 100%;
@@ -711,6 +719,8 @@ main {
     .correo ul {
         font-size: 1rem;
         font-weight: bold;
+        align-items: center;
+        text-align: center;
     }
 
     .images img {
@@ -816,19 +826,160 @@ main {
     .face a {
         font-size: 20px;
     }
+/* --------------------- Nosotros Responsive ---------------------- */
+.imagenes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+.sld {
+    display: flex;
+    flex-flow: column-reverse;
+    align-items: center;
+}
+.nosotros-img {
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    align-items: center;
+}
+.sld img {
+    width: 20%;
+}
 
+
+.nosotros {
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.Andres {
+display: flex;
+margin: 10px;
+flex-flow: row;
+align-items: center;
+}
+.f1 img {
+    width: 90%;
+}
+.text {
+    font-weight: bold;
+    width: 60%;
+}
+
+.Roberto {
+    padding: 20px;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+}
+
+.f2 {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: cen;
+    gap: 10px;
+}
+
+.f2 img {
+    width: 90%;
+}
+
+.Armeria {
+font-size: 1.2rem;
+}
+
+.Armeria img {
+    width: 10%;
+} 
+/* --------------------- Servicios Responsive ------------------------ */
+.servicio {
+    display: grid;
+    justify-self: center;
+    align-self: center;
+    row-gap: 0;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(13 , 1fr)
+}
+.serv img {
+    grid-column: 2/8;
+    grid-row: 1/10;
+    width: 100%;
+}
+.serv {
+    justify-self: center;
+    align-self: center;
+}
+.Pesca {
+    grid-column: 1/2;
+    grid-row: 1/4;
+    grid-template-columns: repeat(8, 12.5%);
+    grid-template-rows: repeat(10, 10%); 
+    display: grid;
+}
+.caza {
+    grid-column: 2/3;
+    grid-row: 1/4;
+    display: grid;
+    grid-template-columns: repeat(8, 12.5%);
+    grid-template-rows: repeat(10, 10%);
+}
+.clu {
+    grid-column: 1/2;
+    grid-row: 5/9;
+    justify-self: center;
+    display: grid;
+    grid-template-columns: repeat(8, 12.5%);
+    grid-template-rows: repeat(10, 10%);
+}
+.SoporteTecnico {
+    grid-column: 2/3;
+    grid-row: 5/9;
+    display: grid;
+    grid-template-columns: repeat(8, 12.5%);
+    grid-template-rows: repeat(10, 10%);
+}
+.Reparacion {
+    grid-column: 1/3;
+    grid-row: 9/13;
+    align-self: center;
+    justify-self: center;
+    display: grid;
+    grid-template-columns: repeat(8, 12.5%);
+    grid-template-rows: repeat(10, 10%);
+}
+.Reparacion a{
+    grid-column: 2/8;
+    align-self: center;
+    justify-self: center;
+}
 
 }
 
-/* -------------------- TABLET to DESKTOP ---------------------- */
+/* -------------------- DESKTOP ---------------------- */
 @media (min-width:1024px) {
+    /* ----------------------- Titulo -------------------------- */
+
+    .titulo {
+        display: flex;
+        flex-flow: row;
+        gap: 20px;
+        padding-left: 30px;
+        justify-content: space-between;
+        width: 60%;
+    }
+
 
     /* --------------- footer --------------------------- */
     .correo li {
         font-size: 1.2rem;
-        margin-top: 15px;
-        padding-bottom: 10px;
-        text-align: top;
+        margin-top: 10px;
+        text-align: center;
+    }
+    .correo ul {
+        align-items: center;
+        text-align: center;
     }
 
     .correo img {
@@ -904,5 +1055,27 @@ main {
     .map iframe {
         width: 500px;
         height: 500px;
+    }
+    /* ------------------------- Nosotros Responsive -------------------- */
+    .text {
+        font-weight: bold;
+        width: 75%;
+    }
+    .Roberto {
+        align-items: center;
+    }
+
+    /* -------------------- Servicios Responsive ------------------------- */
+    .serv {
+        width: 100%;
+    }
+    .Reparacion img {
+        align-self: center;
+        justify-self: center;
+        width: 60%;
+    }
+    .serv a {
+        padding: 20px;
+        font-size: 20px;
     }
 }
