@@ -1,0 +1,52 @@
+.servicio {
+    display: grid;
+    padding-top: 20px;
+    row-gap: 20px;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    .serv {
+        display: grid;
+        grid-template-columns: repeat(8, 12.5%);
+        grid-template-rows: repeat(10, 10%);
+        img {
+            grid-column: 2/8;
+            grid-row: 1/10;
+            width: 100%;
+        }
+        a {
+            grid-column: 3/7;
+            grid-row: 4/7;
+            align-self: center;
+            text-decoration: none;
+            background-color: #c4c2b4ad;
+            text-align: center;
+            padding: 5px;
+            color: #000000;
+            border: 2px solid rgba(0, 0, 0, 0.7);
+            border-radius: 20px;
+        }
+        }
+    .Reparacion {
+        display: grid;
+        grid-template-columns: repeat(9, 11.1%);
+        grid-template-rows: repeat(10, 10%);
+        img {
+            grid-column: 2/9;
+            grid-row: 1/10;
+            width: 100%;
+        }
+        a {
+            grid-column: 3/8;
+            grid-row: 4/7;
+            align-self: center;
+            text-decoration: none;
+            background-color: #c4c2b4ad;
+            text-align: center;
+            padding: 10px;
+            font-size: 14px;
+            color: #000000;
+            border: 2px solid rgba(0, 0, 0, 0.7);
+            border-radius: 20px;
+        }
+    }
+}

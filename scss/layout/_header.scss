@@ -1,0 +1,50 @@
+header {
+    background-color: $background-secundario;
+
+    .titulo {
+        background-color: $background-secundario;
+        width: 100%;
+        @include flex(column nowrap,none,center,10px);
+        text-align: end;
+        padding-bottom: 10px;
+        img {
+            margin-top: 5px;
+            width: 70px;
+            height: 70px;
+        }
+        h1 {
+            font-family: 'Adamina', serif;
+            font-size: 30px;
+        }
+        h2{
+            font-size: 10px;
+            font-family: 'Adamina', serif;
+        }
+    }
+    nav {
+        ul {
+            background-color: $color-correo;
+            @include flex(column wrap,none,center,10px);
+            margin: 0;
+            padding: 10px;
+            li {
+                list-style-type: none;
+                display: inline-block;
+                width: 100%;
+                text-align: center;
+                padding: 10px 15px;
+                a {
+                    text-decoration: none;
+                    text-transform: uppercase;
+                    font-size: 15px;
+                    font-weight:bold;
+                    font-family: 'Hanuman', serif;
+                    color: #000000;
+                }
+                &.Active{
+                    background-color: $hover;
+                }
+            }
+        }
+    }
+}

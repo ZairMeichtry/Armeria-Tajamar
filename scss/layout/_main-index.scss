@@ -1,0 +1,65 @@
+main {
+    background-color: $background-principal;
+    font-family: 'Hanuman', serif;
+}
+.main {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr;
+    grid-template-rows: 300px 1fr 300px;
+    .slr {
+        display: none;
+    }
+    .prod-pesc {
+        display: none;
+    }
+    .lu {
+        a {
+            margin: 20px;
+            padding: 10px;
+            @include flex (column wrap, none, none, none);
+            text-align: center;
+            text-decoration: none;
+            color: black;
+            gap: 5px;
+            background-color: #F4FCD9;
+            border-radius: 20px;
+        }
+    }
+    .promo {
+        display: none
+    }
+    .promocion {
+    @include flex (column wrap, none, none, 30px);
+        padding: 20px;
+        label {
+            display: flex;
+            gap: 10px;
+            padding-left: 25px;
+            img {
+                border-radius: 20px;
+                border: solid black 1px;
+                box-shadow: 2px 3px 20px black;
+            }
+        }
+    }
+    .cluu {
+        div{
+            @include flex (column wrap, none, center, 70px);
+            margin-top: 20px;
+            color: white;
+            font-size: 20px;
+            text-align: center;
+            a{
+                text-decoration: none;
+                background-color:$color-correo;
+                padding: 20px;
+                border-radius: 50% 20% / 10% 40%;
+                color: black;
+                text-transform: uppercase;
+                font-weight: bold;
+                border: 1px #000000ab solid;
+            }
+        }
+    }
+}

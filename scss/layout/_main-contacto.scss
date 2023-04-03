@@ -1,0 +1,75 @@
+.sec {
+    display: grid;
+    grid-template-columns: repeat(10, 10%);
+    grid-template-rows: repeat(20, auto);
+
+    
+    .contact {
+        grid-column: 2/10;
+        grid-row: 1/10;
+        
+        .consulta {
+            @include flex(column nowrap, none, center, none);
+            padding: 20px;
+            text-align: center;
+            color: white;
+            img {
+                width: 60px;
+            }
+            form {
+                @include flex(column nowrap, none, none, 10px);
+                margin-top: 20px;
+                width: 100%;
+        }
+        }
+        .imag {
+                display: none;
+        }
+    }
+    .ubic {
+        color: white;
+        grid-column: 2/10;
+        grid-row: 10/20;
+        @include flex(column nowrap, none, center, none);
+        iframe {
+            width: 300px;
+            height: 300px;
+        }
+        .atte {
+            background-color: #D0C9C0;
+            border-radius: 20px;
+            border: 1px solid black;
+            padding: 20px;
+            margin-bottom: 10px;
+            color: black;
+        }
+        .redes {
+            margin: 20px;
+            @include flex(column nowrap, none, none, 10px);
+            div {
+                @include flex(row nowrap, none, center, 10px);
+                a{
+                    text-decoration: none;
+                    color: white;
+                    font-family: 'Goldman', cursive;
+                }
+            }
+            img {
+                width: 20%;
+            }
+        }
+    }
+    
+
+
+
+
+
+
+
+
+
+
+
+
+}

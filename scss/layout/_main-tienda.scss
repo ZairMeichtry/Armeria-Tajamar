@@ -1,0 +1,24 @@
+.tienda {
+    background-image: url(../assets/img/tienda/foto-fondo.jpg);
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    nav {
+        background-color: #efead8bb;
+        a{
+            list-style-type: none;
+            text-decoration: none;
+            color: black;
+            padding-left: 10px;
+            margin-right: 10px;
+        }
+        .filtro {
+            background-color: #efead884;
+            h5{
+                margin: 0;
+                font-size: 1em;
+            }
+        }
+    }
+}

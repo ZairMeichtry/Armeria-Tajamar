@@ -1,0 +1,168 @@
+@media (min-width:760px){
+    .titulo {
+        @include flex(row nowrap,space-around,none,20px);
+        width: 70%;
+        
+        img {
+            width: 90px;
+            height: 90px;
+        }
+        h1 {
+            font-size: 35px;
+        }
+        h2{
+            font-size: 12px;
+        }
+    }
+    nav{
+        ul{
+            @include flex(row nowrap,space-evenly,none,none);
+            li{
+                display: block;
+                list-style-type: none;
+                text-align: center;
+                width: 100%;
+                padding: 15px 20px;
+            }
+        }
+    }
+    main {
+        background-image: url(https://images.unsplash.com/photo-1527720255604-b27935ade401?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80);
+        width: 100%;
+        background-position: center;
+        background-size: cover;
+    background-attachment: fixed;
+}
+// --------------------------- Footer -------------------------------------------
+.correo{
+    ul {
+        align-items: center;
+        li {
+            p{
+                text-align: center;
+                font-size: 1rem;
+                font-weight: bold;
+            }
+            img{
+                width: 45%;
+            }
+    }
+}
+} 
+.columns {
+    .col1 {
+        grid-template-columns: 50% 50%;
+        grid-template-rows: auto;
+        .SanMartin {
+            align-self: center;
+            text-align: center;
+            justify-self: center;
+            display: flex;
+            grid-row: 1/4;
+            grid-column: 2/3;
+        }
+        .SantaRosa {
+            display: flex;
+            align-items: center;
+            text-align: center;
+            grid-row: 1/4;
+            align-self: center;
+            justify-self: center;
+            grid-column: 1/2;
+        }
+    }
+
+    .col2 {
+        grid-template-columns: repeat(6, 16.6%);
+        grid-template-rows: 50% 15% 10% 10%;
+        .logo {
+            grid-column: 2/6;
+            justify-self: center;
+            align-self: center;
+            img {
+                width: 100%;
+            }
+        }
+    }
+    .col3{
+        div{
+            img {
+                width: 15%;
+                margin-left: 30px;
+            }
+        }
+    }
+}
+// -----------------------Contacto---------------------------------
+.sec{
+    .contact {
+        grid-column: 6/10;
+        grid-row: 1/10;
+        align-self: center;
+        .consulta {
+            img {
+                width: 20%;
+            }
+    form{
+        margin-top: 0;
+        textarea{
+            padding: 3px 0 0 5px;
+        }
+        input{
+            padding: 2px 10px;
+        }
+    }
+}
+.imag{
+    display: flex;
+    grid-column: 6/10;
+    margin: 20px;
+    justify-content: center;
+    img{
+        width: 80%;
+    }
+}
+}
+.ubic {
+    margin: 20px;
+    gap: 20px;
+    grid-column: 1/6;
+    grid-row: 1/7;
+    iframe {
+        width: 300px;
+        height: 300px;
+    }
+    .atte {
+        text-align: center;
+    }
+    .redes {
+        a{
+            font-size: 20px;
+        }
+    }
+}
+}
+// -------------------------nosotros---------------------------------
+.nosotros{
+    .slider{
+        width: 100%;
+        height: 500px;
+        overflow: hidden;
+        figure{
+            position: relative;
+    left: 0;
+    width: 400%; /* width dikali slide */
+    animation: 10s slide infinite;
+    div{
+        img{
+            width: 100%;
+            height: 500px;
+        }
+        position: relative;
+        width: 25%; /* width dibagi slide */
+        float: left;
+    }
+        }
+}
+}
+}
