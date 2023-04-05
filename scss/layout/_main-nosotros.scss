@@ -1,67 +1,90 @@
-.imagenes {
-    display: none;
-}
-
 .nosotros {
-    @include flex(column nowrap, none, none, 20px);
+    @include flex(column nowrap, none, center, 20px);
+
     .Andres {
         padding: 20px;
         @include flex(column nowrap, none, none, 20px);
+
         div {
             @include flex(column nowrap, none, center, 10px);
+
             img {
                 width: 50%;
             }
+
             h3 {
                 background-color: #F4FCD9cd;
                 padding: 5px;
                 border: 1px solid black;
                 border-radius: 10px;
             }
-            } 
-                p{
-                    color: white;
-                    text-align: justify;
-                }
-            }
-        .Roberto {
-            padding: 20px;
-            @include flex(column nowrap, none, none, 20px);
-            figure {
-                @include flex(column nowrap, none, center, 10px);
-                display: flex;
-                flex-flow: column nowrap;
-                align-items: center;
-                gap: 10px;
-                img{
-                    width: 50%;
-                }
-                h3 {
-                    background-color: #f4fcd9cd;
-                    padding: 5px;
-                    border: 1px solid black;
-                    border-radius: 10px;
-                }
-            }
-            div {
-                p{
-                    color: white;
-                    text-align: justify;
-                }
-            }
         }
-        .Armeria {
-            
-                border-radius: 20px;
-                padding: 20px;
-                margin: 10px 0;
+
+        p {
+            color: white;
+            text-align: justify;
+        }
+    }
+.imagenes {
+    display: flex;
+    
+    max-width: 200px;
+    height: 200px;
+    border-radius: 20px;
+    box-shadow: 2px 2px 4px black;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory ;
+    img{
+        width: 100%;
+        object-fit: cover;
+        scroll-snap-align: center;
+    }
+}
+    .Roberto {
+        padding: 20px;
+        @include flex(column nowrap, none, none, 20px);
+
+        figure {
+            @include flex(column nowrap, none, center, 10px);
+            display: flex;
+            flex-flow: column nowrap;
+            align-items: center;
+            gap: 10px;
+
+            img {
+                width: 50%;
+            }
+
+            h3 {
+                background-color: #f4fcd9cd;
+                padding: 5px;
                 border: 1px solid black;
-                background-color: rgba(128, 128, 128, 0.561);
-                color: white;
-                @include flex(column nowrap, none, center, none);
-                img {
-                    width: 20%;
-                }
+                border-radius: 10px;
             }
-            
         }
+
+        div {
+            p {
+                color: white;
+                text-align: justify;
+            }
+        }
+    }
+
+
+    .Armeria {
+
+        border-radius: 20px;
+        padding: 20px;
+        margin: 10px 0;
+        border: 1px solid black;
+        background-color: rgba(128, 128, 128, 0.561);
+        color: white;
+        @include flex(column nowrap, none, center, none);
+
+        img {
+            width: 20%;
+        }
+    }
+
+}

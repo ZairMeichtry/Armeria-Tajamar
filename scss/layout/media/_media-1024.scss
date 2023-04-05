@@ -1,0 +1,78 @@
+@media (min-width:1024px) {
+
+    .correo {
+        ul {
+            align-items: center;
+            text-align: center;
+
+            li {
+                font-size: 1.2rem;
+                margin-top: 10px;
+                text-align: center;
+
+                img {
+                    width: 50%;
+                }
+            }
+        }
+    }
+
+    .columns {
+        display: grid;
+        width: 100%;
+        grid-template-columns: 33.33% 33.33% 33.33%;
+        grid-template-rows: auto;
+
+        .col1 {
+            grid-template-rows: 200px 140px;
+            grid-template-columns: 33.33% 33.33% 33.33%;
+            row-gap: 20px;
+
+            .SantaRosa {
+                text-align: center;
+                align-items: center;
+                grid-row: 1/2;
+                align-self: center;
+                justify-self: center;
+                grid-column: 1/4;
+                margin-top: 30px;
+
+                p {
+                    font-size: 1.2rem;
+                    text-align: center;
+                }
+            }
+
+            .SanMartin {
+                align-self: center;
+                text-align: center;
+                justify-self: center;
+                display: flex;
+                grid-row: 1/4;
+                grid-column: 1/4;
+
+                p {
+                    font-size: 1.1rem;
+                }
+            }
+        }
+
+        .col3 {
+            display: grid;
+            grid-template-rows: 1/11;
+            grid-template-columns: 1/7;
+            align-self: self-start;
+            justify-self: center;
+            height: 380px;
+
+            div {
+                grid-row: 2/10;
+                grid-column: 1/7;
+
+                img {
+                    width: 20%;
+                }
+            }
+        }
+    }
+}

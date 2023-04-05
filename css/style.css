@@ -9,46 +9,22 @@ header {
     background-color: #EFEAD8;
     width: 100%;
     display: flex;
-    flex-flow: column nowrap;
-    justify-content: none;
+    flex-direction: row;
+    justify-content: center;
     align-items: center;
     gap: 10px;
     text-align: end;
     padding-bottom: 10px; }
-    header .titulo img {
-      margin-top: 5px;
-      width: 70px;
-      height: 70px; }
     header .titulo h1 {
       font-family: 'Adamina', serif;
-      font-size: 30px; }
+      font-size: 50px; }
     header .titulo h2 {
-      font-size: 10px;
+      font-size: 20px;
       font-family: 'Adamina', serif; }
-  header nav ul {
-    background-color: #D0C9C0;
-    display: flex;
-    flex-flow: column wrap;
-    justify-content: none;
-    align-items: center;
-    gap: 10px;
-    margin: 0;
-    padding: 10px; }
-    header nav ul li {
-      list-style-type: none;
-      display: inline-block;
-      width: 100%;
-      text-align: center;
-      padding: 10px 15px; }
-      header nav ul li a {
-        text-decoration: none;
-        text-transform: uppercase;
-        font-size: 15px;
-        font-weight: bold;
-        font-family: 'Hanuman', serif;
-        color: #000000; }
-      header nav ul li.Active {
-        background-color: #464E2E; }
+  header nav {
+    background-color: #D0C9C0; }
+    header nav img {
+      width: 40%; }
 
 main {
   background-color: #485742;
@@ -160,14 +136,11 @@ main {
       border: 2px solid rgba(0, 0, 0, 0.7);
       border-radius: 20px; }
 
-.imagenes {
-  display: none; }
-
 .nosotros {
   display: flex;
   flex-flow: column nowrap;
   justify-content: none;
-  align-items: none;
+  align-items: center;
   gap: 20px; }
   .nosotros .Andres {
     padding: 20px;
@@ -192,6 +165,18 @@ main {
     .nosotros .Andres p {
       color: white;
       text-align: justify; }
+  .nosotros .imagenes {
+    display: flex;
+    max-width: 200px;
+    height: 200px;
+    border-radius: 20px;
+    box-shadow: 2px 2px 4px black;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory; }
+    .nosotros .imagenes img {
+      width: 100%;
+      object-fit: cover;
+      scroll-snap-align: center; }
   .nosotros .Roberto {
     padding: 20px;
     display: flex;
@@ -414,32 +399,6 @@ main {
       opacity: 40%; }
 
 @media (min-width: 760px) {
-  .titulo {
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-around;
-    align-items: none;
-    gap: 20px;
-    width: 70%; }
-    .titulo img {
-      width: 90px;
-      height: 90px; }
-    .titulo h1 {
-      font-size: 35px; }
-    .titulo h2 {
-      font-size: 12px; }
-  nav ul {
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-evenly;
-    align-items: none;
-    gap: none; }
-    nav ul li {
-      display: block;
-      list-style-type: none;
-      text-align: center;
-      width: 100%;
-      padding: 15px 20px; }
   main {
     background-image: url(https://images.unsplash.com/photo-1527720255604-b27935ade401?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80);
     width: 100%;
@@ -515,50 +474,141 @@ main {
       text-align: center; }
     .sec .ubic .redes a {
       font-size: 20px; }
-  .nosotros .slider {
+  .nosotros .Andres {
+    display: flex;
+    margin: 10px;
+    flex-flow: row;
+    align-items: center; }
+    .nosotros .Andres div img {
+      width: 200px; }
+    .nosotros .Andres div p {
+      width: 100%;
+      background-color: rgba(128, 128, 128, 0.561);
+      padding: 20px;
+      border: 2px solid rgba(0, 0, 0, 0.486);
+      border-radius: 20px; }
+  .nosotros .imagenes {
+    max-width: 364px;
+    height: 364px; }
+  .nosotros .Roberto {
+    padding: 20px;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center; }
+    .nosotros .Roberto figure {
+      display: flex;
+      flex-flow: column nowrap;
+      align-items: cen;
+      gap: 10px; }
+      .nosotros .Roberto figure img {
+        width: 200px; }
+    .nosotros .Roberto div p {
+      width: 100%;
+      background-color: rgba(128, 128, 128, 0.561);
+      padding: 20px;
+      border: 2px solid rgba(0, 0, 0, 0.486);
+      border-radius: 20px; }
+  .nosotros .Armeria {
+    font-size: 1rem; }
+    .nosotros .Armeria img {
+      width: 10%; }
+  .servicio {
+    display: grid;
+    justify-self: center;
+    align-self: center;
+    row-gap: 0;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto; }
+    .servicio .serv img {
+      grid-column: 2/8;
+      grid-row: 1/10;
+      width: 100%; }
+    .servicio .Pesca {
+      grid-column: 1/2;
+      grid-row: 1/4;
+      grid-template-columns: repeat(8, 12.5%);
+      grid-template-rows: repeat(10, 10%);
+      display: grid; }
+    .servicio .caza {
+      grid-column: 2/3;
+      grid-row: 1/4;
+      display: grid;
+      grid-template-columns: repeat(8, 12.5%);
+      grid-template-rows: repeat(10, 10%); }
+    .servicio .clu {
+      grid-column: 1/2;
+      grid-row: 5/9;
+      justify-self: center;
+      display: grid;
+      grid-template-columns: repeat(8, 12.5%);
+      grid-template-rows: repeat(10, 10%); }
+    .servicio .SoporteTecnico {
+      grid-column: 2/3;
+      grid-row: 5/9;
+      display: grid;
+      grid-template-columns: repeat(8, 12.5%);
+      grid-template-rows: repeat(10, 10%); }
+    .servicio .Reparacion {
+      grid-column: 1/3;
+      grid-row: 9/13;
+      align-self: center;
+      justify-self: center;
+      display: grid;
+      grid-template-columns: repeat(8, 12.5%);
+      grid-template-rows: repeat(10, 10%); }
+      .servicio .Reparacion a {
+        grid-column: 2/8;
+        align-self: center;
+        justify-self: center; } }
+
+@media (min-width: 1024px) {
+  .correo ul {
+    align-items: center;
+    text-align: center; }
+    .correo ul li {
+      font-size: 1.2rem;
+      margin-top: 10px;
+      text-align: center; }
+      .correo ul li img {
+        width: 50%; }
+  .columns {
+    display: grid;
     width: 100%;
-    height: 500px;
-    overflow: hidden; }
-    .nosotros .slider figure {
-      position: relative;
-      left: 0;
-      width: 400%;
-      /* width dikali slide */
-      animation: 10s slide infinite; }
-      .nosotros .slider figure div {
-        position: relative;
-        width: 25%;
-        /* width dibagi slide */
-        float: left; }
-        .nosotros .slider figure div img {
-          width: 100%;
-          height: 500px; }
-  @keyframes slide {
-    0% {
-      left: 0; }
-    10% {
-      left: 0; }
-    20% {
-      left: -100%; }
-    30% {
-      left: -100%; }
-    40% {
-      left: -200%; }
-    50% {
-      left: -200%; }
-    55% {
-      left: -300%; }
-    65% {
-      left: -300%; }
-    66% {
-      left: -200%; }
-    74% {
-      left: -200%; }
-    75% {
-      left: -100%; }
-    85% {
-      left: -100%; }
-    90% {
-      left: 0; }
-    1000% {
-      left: 0; } } }
+    grid-template-columns: 33.33% 33.33% 33.33%;
+    grid-template-rows: auto; }
+    .columns .col1 {
+      grid-template-rows: 200px 140px;
+      grid-template-columns: 33.33% 33.33% 33.33%;
+      row-gap: 20px; }
+      .columns .col1 .SantaRosa {
+        text-align: center;
+        align-items: center;
+        grid-row: 1/2;
+        align-self: center;
+        justify-self: center;
+        grid-column: 1/4;
+        margin-top: 30px; }
+        .columns .col1 .SantaRosa p {
+          font-size: 1.2rem;
+          text-align: center; }
+      .columns .col1 .SanMartin {
+        align-self: center;
+        text-align: center;
+        justify-self: center;
+        display: flex;
+        grid-row: 1/4;
+        grid-column: 1/4; }
+        .columns .col1 .SanMartin p {
+          font-size: 1.1rem; }
+    .columns .col3 {
+      display: grid;
+      grid-template-rows: 1/11;
+      grid-template-columns: 1/7;
+      align-self: self-start;
+      justify-self: center;
+      height: 380px; }
+      .columns .col3 div {
+        grid-row: 2/10;
+        grid-column: 1/7; }
+        .columns .col3 div img {
+          width: 20%; } }
