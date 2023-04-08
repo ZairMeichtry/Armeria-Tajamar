@@ -1,24 +1,20 @@
 .tienda {
-    background-image: url(https://images.unsplash.com/photo-1574422394036-b410bb9c8f82?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=735&q=80);
-    width: 100%;
-    background-position: center;
-    background-size: cover;
-    background-attachment: fixed;
     nav {
         background-color: #efead8bb;
         a{
-            list-style-type: none;
+
             text-decoration: none;
-            color: black;
+            color: white;
             padding-left: 10px;
             margin-right: 10px;
         }
-        .filtro {
-            background-color: #efead884;
-            h5{
-                margin: 0;
-                font-size: 1em;
-            }
+    }
+    .filtro {
+        background-color: #efead884;
+        h5{
+            margin: 0;
+            font-size: 1em;
         }
     }
+
 }

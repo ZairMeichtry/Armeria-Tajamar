@@ -1,10 +1,22 @@
 @media (min-width:760px) {
-    main {
+    .bg {
         background-image: url(https://images.unsplash.com/photo-1527720255604-b27935ade401?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80);
         width: 100%;
         background-position: center;
         background-size: cover;
         background-attachment: fixed;
+    }
+    .tienda{
+        .fondo{
+            background-image: url(https://images.unsplash.com/photo-1574422394036-b410bb9c8f82?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=735&q=80);
+            width: 100%;
+            background-position: center;
+            background-size: cover;
+            background-attachment: fixed;
+        }
+        .navigation{
+            background-color:$background-secundario;
+        } 
     }
 
     header {
@@ -101,6 +113,90 @@
             }
         }
     }
+    // -------------------inicio------------------------------------
+.main {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows:300px 550px 300px 820px ;
+    .Welcome {
+        display: none;
+    }
+    .ofertas{
+        grid-row: 2/3;
+        grid-column: 1/3;
+        .promocion{
+            display: flex;
+            align-items: center;
+            gap: 0;
+            padding: 0;
+            max-width: 730px;
+            margin-left: 20px;
+            height: 510px;
+            overflow-x: scroll;
+            scroll-snap-type: x mandatory;
+            label{
+                flex-direction: row;
+                scroll-snap-align: center;
+            }
+            img{
+                border-radius: 40px;
+                width: 360px;
+                object-fit: cover;
+            }
+        }
+    }
+    .lu {
+        grid-column: 1/3;
+        grid-row: 1/2;
+    }
+    .cluu{
+grid-column:1/3 ;
+grid-row: 3/4;
+    }
+    .prod-pesc{
+        grid-column: 1/3;
+        grid-row: 4/5;
+        display: flex;
+        flex-direction: column;
+        background-color: #EFEAD8;
+        margin: 0 10px 20px 10px;
+        border-radius: 20px;
+        
+    }
+    .title{
+        padding: 20px;
+    }
+    .f-cards{
+        display: flex;
+        max-width: 730px;
+        height: 720px;
+        flex-direction: row;
+        align-items: center;
+        gap: 10px;
+        padding-left: 20px;
+        overflow-x: scroll;
+        scroll-snap-type: x mandatory;
+        label{
+            display: flex;
+            flex-direction: column;
+            scroll-snap-align: center;
+            height: 700px;
+            padding: 20px;
+            background-color: #D0C9C0;
+            margin: 0 10px;
+            border-radius: 20px;
+            gap: 10px;
+            p{
+                text-align: justify;
+            }
+            img{
+                width: 360px;
+                border-radius: 40px;
+                height: auto;
+                object-fit: cover;
+            }
+    }
+}
+}
 
     // -----------------------Contacto---------------------------------
     .sec {
@@ -110,6 +206,9 @@
             align-self: center;
 
             .consulta {
+                margin-top: 20px;
+                background-color: #efead83f;
+                border-radius: 30px;
                 img {
                     width: 20%;
                 }

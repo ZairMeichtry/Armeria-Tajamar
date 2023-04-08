@@ -1,0 +1,48 @@
+@media (min-width:1440px){
+    header{
+        .titulo{
+            width: 60%;
+            img{
+                width: 10%;
+            }
+        }
+    }
+    .main{
+        .ofertas{
+            .promocion{
+                max-width: 760px;
+            }
+        }
+        .prod-pesc{
+            .f-cards{
+                max-width: 1400px;
+            }
+        }
+    }
+    footer{
+        .columns{
+
+            .col3 {
+                display: grid;
+                grid-template-rows: 1/9;
+                grid-template-columns: 1/7;
+                align-self: self-start;
+                justify-self: center;
+                .images{
+                    
+                    height: 380px;
+                    img{
+                        width: 20%;
+                        margin-left: 5px;
+                    }
+                }
+            }
+        }
+        }
+        // ------------------servicios----------------
+        .servicio{
+            
+            grid-template-rows: 500px 500px 500px;
+        }
+        
+    }
