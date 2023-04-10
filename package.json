@@ -1,7 +1,7 @@
 {
   "name": "proyecto",
   "version": "1.0.0",
-  "description": "",
+  "description": "Sitio Web Armeria el Tajamar responsive",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",

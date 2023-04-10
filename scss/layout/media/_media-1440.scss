@@ -1,0 +1,69 @@
+@media screen and (min-width:1440px) {
+    header {
+        .titulo {
+            width: 60%;
+
+            img {
+                width: 10%;
+            }
+        }
+    }
+
+    .main {
+        .ofertas {
+            .promocion {
+                max-width: 760px;
+                height: 530px;
+
+                label {
+                    a {
+                        img {
+                            box-shadow: none;
+                            border: none;
+                        }
+                    }
+                }
+            }
+        }
+
+        .prod-pesc {
+            align-items: center;
+
+            .f-cards {
+                max-width: 100%;
+
+                label {
+                    align-items: center;
+                }
+            }
+        }
+    }
+
+    footer {
+        .columns {
+
+            .col3 {
+                display: grid;
+                grid-template-rows: 1/9;
+                grid-template-columns: 1/7;
+                align-self: self-start;
+                justify-self: center;
+
+                .images {
+
+                    img {
+                        width: 15%;
+                    }
+                }
+            }
+        }
+    }
+
+    // ------------------servicios----------------
+    .servicio {
+
+        grid-template-rows: 1fr 1fr 1fr;
+        
+    }
+    
+}

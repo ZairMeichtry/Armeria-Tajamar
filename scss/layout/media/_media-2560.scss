@@ -1,0 +1,211 @@
+@media (min-width:2560px) {
+
+    // -------------------------------inicio-------------------------
+    .main {
+        grid-template-rows: 1000px 850px 300px 950px;
+
+        .Welcome {
+            height: 900px;
+
+            img {
+                height: 900px;
+            }
+        }
+
+        .lu {
+            div {
+                height: 800px;
+
+                a {
+                    height: 800px;
+                    gap: 26px;
+                    font-size: 20px;
+                }
+            }
+        }
+
+        .ofertas {
+            .promocion {
+                max-width: 1810px;
+                height: 720px;
+
+                label {
+                    a {
+                        img {
+                            width: 500px;
+                        }
+                    }
+                }
+            }
+        }
+
+        .prod-pesc {
+
+            .f-cards {
+                height: 900px;
+
+                label {
+                    height: 760px;
+
+                    p {
+                        font-size: 20px;
+                    }
+
+                    a {
+                        img {
+                            width: 400px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    // ----------------------contacto--------------------
+    .sec {
+        .ubic {
+            iframe {
+                width: 800px;
+                height: 800px;
+            }
+        }
+
+        .contact {
+            .consulta {
+                img {
+                    width: 10%;
+                }
+            }
+        }
+
+    }
+
+    // ---------------------------nosotros--------------------------------
+    .nosotros {
+        gap: 40px;
+
+        .Andres {
+            div {
+                img {
+                    width: 500px;
+                }
+
+                h3 {
+                    font-size: 25px;
+                }
+            }
+
+            div {
+
+                p {
+                    font-size: 24px;
+                    height: 400px;
+                    padding: 40px 10px;
+                }
+            }
+        }
+
+        .imagenes {
+            max-width: 500px;
+            height: 500px;
+        }
+
+        .Roberto {
+            figure {
+                img {
+                    width: 500px;
+                }
+
+                figcaption {
+                    h3 {
+                        font-size: 25px;
+                    }
+                }
+            }
+
+            div {
+                p {
+                    font-size: 24px;
+                    height: 400px;
+                    padding: 40px 10px;
+                }
+            }
+        }
+
+        .Armeria {
+            margin: 20px;
+
+            p {
+                font-size: 25px;
+            }
+        }
+    }
+
+    // -----------------------------servicios---------------------
+    .servicio {
+        grid-template-rows: 800px 1000px 1000px;
+
+        .serv {
+            a {
+                font-size: 25px;
+                padding: 25px;
+            }
+        }
+    }
+
+    // ------------------------footer----------------------------------
+    footer {
+        .columns {
+            .col1 {
+                row-gap: 50px;
+            }
+
+            .col2 {
+                .redes-footer {
+                    a {
+                        img {
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+
+            .col3 {
+                .images {
+                    img {
+                        width: 15%;
+                        margin: 0;
+                    }
+                }
+            }
+        }
+    }
+
+    // ---------------------header---------------------
+    header {
+        .titulo {
+            padding-left: 30px;
+
+            .title {
+                h1 {
+                    font-size: 50px;
+                }
+
+                h2 {
+                    font-size: 20px;
+                }
+            }
+        }
+        .NavBarr{
+            nav{
+                ul{
+                    li{
+                        a{
+                            font-size: 25px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
