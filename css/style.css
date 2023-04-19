@@ -880,7 +880,9 @@ main {
     footer .columns .col3 .images img {
       width: 15%; }
   .servicio {
-    grid-template-rows: 1fr 1fr 1fr; } }
+    grid-template-rows: 1fr 1fr 1fr; }
+  .nosotros .Armeria p {
+    font-size: 20px; } }
 
 @media (min-width: 2560px) {
   .main {
